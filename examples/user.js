@@ -6,7 +6,7 @@ async function fetch(url, body) {
         var res = await axios.post(url, body);
         console.log(res.data);
     } catch(err) {
-        console.log(err.response.status, err.response.statusText);
+        console.log(err);
     }
     
 }

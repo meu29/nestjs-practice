@@ -24,8 +24,8 @@ export class MemoService {
         const memo = await this.prismaService.memo.delete({where: {memo_id: memoId}});
         return memo;
     }
-
-    async deleteAllMemo(userId: number): Promise<Memo[]> {
+    
+    async deleteAllMemo(userId: number) {
         const memos = await this.prismaService.memo.deleteMany({where: {user_id: userId}});
         return memos;
     }

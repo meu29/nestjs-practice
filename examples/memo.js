@@ -1,3 +1,5 @@
+/* spec.tsで書き直す */
+
 var axios = require("axios");
 
 async function fetch(url, type, body = {}) {
